@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext, useEffect } from 'react';
-import { motion, HTMLMotionProps, AnimatePresence, MotionProps } from 'framer-motion';
+import { motion, HTMLMotionProps, AnimatePresence } from 'framer-motion';
 import { X, Moon, Sun, Clock, PlayCircle, CheckCircle, Info, AlertCircle, XCircle } from 'lucide-react';
 import { Assessment } from '../types';
 
@@ -103,7 +103,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 };
 
 // --- Card ---
-export interface GlassCardProps extends React.HTMLAttributes<HTMLDivElement>, MotionProps {
+export interface GlassCardProps extends HTMLMotionProps<"div"> {
   children?: React.ReactNode;
   className?: string;
   hoverEffect?: boolean;
