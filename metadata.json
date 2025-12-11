@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Wisecrew Careers",
+  "description": "A premium, glassmorphic recruitment portal for Wisecrew Solutions featuring job listings, culture showcase, and a multi-step application process.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
